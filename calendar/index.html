@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>달력 사전학습</title>
+</head>
+<body>
+<script>
+
+  var d = new Date(),  //데이터 객체 생성
+      h = d.getHours(),  //시를 구함
+      m = d.getMinutes(), //분을 구함 
+      s = d.getSeconds(), //초를 구함 
+      time = h + "시" + m + "분" + s + "초";
+
+    document.write(time);
+    document.write("------------>>>>")
+
+    // 일반적으로 애플리케이션에서는 오전과 오후를 구분하고 12시간제로 표시하므로 이 부분을 별도로 변환해야 합니다. 
+
+   //24시간제 12시간제로 변경 
+   var h12 = (h < 12) ? (h - 12) : h;
+  //  12시간제 오전 오후 판정 
+  var ampm = (h<12)? "오전":"오후";
+  // 분 2자릿수 표시 
+  var min_0 = (m < 10 ) ? "0" : " ";
+  // 초 2자릿수 표시 
+  var sec_0 = (s < 10) ?"0":"";
+
+  var time2 = ampm + " " + h12 + ":" + min_0 + m + ":" +sec_0 + s;
+  document.write(time2)
+
+  document.write( "<br>" )
+
+  // 8.2.2요일 출력 
+  // 요일은 getDay()메서드로 값을 구하는데, 0~6의 숫자로 반환되므로 이를 문자열로 변환해야합니다.
+  var d = new Date();
+  var year = d.getFullYear(),
+      month = d.getMonth(),
+      date = d.getDate(),
+      day = d.getDay();
+
+      // 요일을 판단 
+      switch(day){
+        case 0: var dd = "일";
+        break;
+        case 1: var dd = "월";
+        break;
+        case 2: var dd = "화";
+        break;
+        case 3: var dd = "수";
+        break;
+        case 4: var dd = "목";
+        break;
+        case 5: var dd = "금";
+        break;
+        case 6: var dd = "토";
+        break;
+        default:break;
+      }
+
+      document.write(year + "년");
+      document.write((month + 1) + "월");
+      document.write(date + "일 ");
+      document.write(dd + "요일<br>")
+
+  
+</script>
+</body>
+</html>
