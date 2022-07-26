@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 제어</title>
+  <script src="main.js" defer></script>
+</head>
+<style>
+  #box {
+    width: 100%; height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  #box.hover {
+    background-color: orange;
+    color: #fff;
+  }
+</style>
+<body>
+
+  <h1>홈페이지에 오신 것을 환영합니다.</h1>
+  <button id="btn">click</button>
+
+  <!-- // 두가지 이벤트 속성으로 hover처리  -->
+  <div id="box">
+    <p>마우스를 올려주세요</p>
+  </div>
+
+  <!-- preventDefault() 메서드 -->
+  <form action="" id="frm">
+    <fieldset>
+      <legend>주소록</legend>
+      <textarea name="txt" id="txt" cols="30" rows="10"></textarea>
+      <input type="submit" id="q" value="불러오기">
+    </fieldset>
+  </form>
+
+
+<!-- // 4.7 드래그 앤 드롭 구현  -->
+
+  <div id="drag">
+    <p>마우스를 올려주세요</p>
+  </div>
+
+</body>
+</html>
