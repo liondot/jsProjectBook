@@ -5,21 +5,8 @@ const list = document.getElementById('list');
 const li = list.getElementsByTagName('li');
 const addBtn = document.getElementById('add_btn');
 
-for(let i = 0; i< li.length; i++) {
-    li[i].addEventListener('click', activeItem)
-}
+list.addEventListener('click', activeItem)
 
-function activeItem(){
-    // 해당 목록을 클릭하면 제목 영역에 표시 
-    // title.innerHTML = this.innerText;
-
-    // 목록 스타일 초기화 
-    for(let i = 0; i <li.length; i++) {
-        li[i].removeAttribute('class');
-    }
-
-    this.setAttribute('class', 'active')
-}
 
 addBtn.addEventListener('click', function(){
     let txt = prompt('제목 입력');
@@ -40,4 +27,3 @@ function activeItem(event) {
     event.target.setAttribute('class', 'active')
 }
 
-list.addEventListener('click', activeItem)
