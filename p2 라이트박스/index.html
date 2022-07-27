@@ -5,16 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>p2 라이트박스</title>
-  <script src="main.js" defer></script>
+  <!-- <script src="main.js" defer></script> -->
   <link rel="stylesheet" href="style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="jqeuryVs.js" defer></script>
 </head>
 <body>
   
   <header>
     <h1>light box</h1>
-    <img src="img1.png" alt="" class="thumb" width="100" onclick="lightbox_open(1)">
-    <img src="img2.png" alt="" class="thumb" width="100" onclick="lightbox_open(2)">
-    <img src="img3.png" alt="" class="thumb" width="100" onclick="lightbox_open(3)">
+    <img src="img1.png" alt="" class="thumb" width="100">
+    <img src="img2.png" alt="" class="thumb" width="100">
+    <img src="img3.png" alt="" class="thumb" width="100">
   </header>
   <div id="block"></div>
   <div id="lightbox">
@@ -27,11 +32,11 @@
     </figure>
 
     <div class="indicator">
-      <button onclick="change_img(this.innerHTML)">1</button>
-      <button onclick="change_img(this.innerHTML)">2</button>
-      <button onclick="change_img(this.innerHTML)">3</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
     </div>
-    <div class="btn_close" onclick="lightbox_close()">X</div>
+    <div class="btn_close">X</div>
   </div>
 </body>
 </html>
