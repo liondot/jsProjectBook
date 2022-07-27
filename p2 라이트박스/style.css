@@ -68,3 +68,35 @@ figure img.active {
   background-color: #666;
 }
 
+/* 블럭요소 css  */
+#block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+  background-color: #111;
+  z-index: 9;
+  display: none;
+}
+#block.active {
+  display: block;
+}
+
+/* 인디케이터 내비게이션  */
+.indicator {
+  text-align: center;
+}
+.indicator button {
+  background-color: #666;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  padding: 2px 5px;
+}
+.indicator button:focus {
+  background: #38f;
+}
