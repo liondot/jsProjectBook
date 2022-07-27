@@ -9,6 +9,6 @@ if(num == '' || isNaN(num)) {
 } else {
     // 구구단 계산 
     for(let i = 1; i < 10; i++) {
-        document.write(num + ' * ' +  i + ' = ' + num * i + '<br>')
+            document.write(num + ' * ' +  i + ' = ' + num * i + '<br>')
     }
 }
