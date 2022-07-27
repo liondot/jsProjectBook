@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>작업목록</title>
     <script src="main.js" defer></script>
+    <style>
+        #add_btn {
+            padding: 5px 10px;
+            border: 0;
+            background-color: #f80; 
+            color: white;
+            border-radius: 5px;
+        }
+    
+        ul {
+            padding: 0;
+            list-style-position: inside;
+        }
+    
+        li {
+            border-bottom: 1px solid #999;
+            padding: 5px 0;
+        }
+        .active {
+            background: #abc;
+        }
+    </style>
 </head>
-<style>
-    #add_btn {
-        padding: 5px 10px;
-        border: 0;
-        background-color: #f80; 
-        color: white;
-        border-radius: 5px;
-    }
 
-    ul {
-        padding: 0;
-        list-style-position: inside;
-    }
-
-    li {
-        border-bottom: 1px solid #999;
-        padding: 5px 0;
-    }
-    .active {
-        background: #abc;
-    }
-</style>
 <body>
     <h1 id="title">할일 목록</h1>
     <button id="add_btn">목록 추가</button>
