@@ -14,11 +14,12 @@ day = d.getDay();
 // caption 영역 날짜 표시 객체 
 const caption_year = document.querySelector('.year');
 const caption_month = document.querySelector('.month');
-const start_day = document.querySelectorAll('tr td')
+const start_day = document.querySelectorAll('tr td');
 
 // 한 달 치 날짜를 테이블에 시작 요일부터 순서대로 표시 
 for(let i = day; i < day + d_length; i++){
   start_day[i].innerHTML = date;
+  date++;
 }
 
 // caption 연도, 월 표시 

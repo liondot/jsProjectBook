@@ -60,4 +60,3 @@ document.write(year + "년");
 document.write((month + 1) + "월 ");
 document.write(date + "일");
 document.write(dd + "요일<br>");
-
